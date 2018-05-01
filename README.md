@@ -7,14 +7,19 @@ Get familiar with react-native tooling and development experience.
 ### Display List of Recipes
 
 Given I have recipe 'Biscuits and Gravy'
+
 And I have recipe 'Tacos'
+
 When I open the 'Top Notch Recipes'
+
 Then I should see two recipes
 
 ### Display Recipe Detail
 
 Given I have recipe 'Biscuits and Gravy'
+
 When I view 'Biscuits and Gravy'
+
 Then I should see ingredients for 'Biscuits and Gravy'
 
 ## Expectations
