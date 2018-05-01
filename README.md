@@ -36,8 +36,6 @@ Then I should see ingredients for 'Biscuits and Gravy'
   * Used to run react-native apps
 * [Create React Native App](https://github.com/react-community/create-react-native-app)
   * Used to create an initial react-native app.
-* [Fastlane](https://docs.fastlane.tools/)
-  * Used for automation of tasks
 * [Detox](https://github.com/wix/detox)
   * End-to-End tseting tool
 * [Jest](https://facebook.github.io/jest/)
