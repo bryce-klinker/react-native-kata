@@ -2,15 +2,6 @@
 
 Get familiar with react-native tooling and development experience.
 
-## Expectations
-
-* Setup a new react-native application using `create-react-native-app`. 
-* Create unit tests using Jest
-* Create Acceptance Tests using Detox
-* Run unit tests using yarn
-* Run Acceptance Tests using yarn
-* Use native components in react-native
-
 ## Features
 
 ### Display List of Recipes
@@ -25,6 +16,15 @@ Then I should see two recipes
 Given I have recipe 'Biscuits and Gravy'
 When I view 'Biscuits and Gravy'
 Then I should see ingredients for 'Biscuits and Gravy'
+
+## Expectations
+
+* Setup a new react-native application using `create-react-native-app`. 
+* Create unit tests using Jest
+* Create Acceptance Tests using Detox
+* Run unit tests using yarn
+* Run Acceptance Tests using yarn
+* Use native components in react-native
 
 ## Tooling
 
