@@ -21,7 +21,7 @@ And I should see the average rating for the recipe
 
 ## Api Definition
 
-The recipes should be retrieved using the api definition found [here](./api.json)
+The recipes should be retrieved using the api definition found [here](./swagger.json)
 
 ## Expectations
 
