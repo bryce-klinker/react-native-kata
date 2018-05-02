@@ -10,12 +10,18 @@ Given I have recipe 'Biscuits and Gravy'
 And I have recipe 'Tacos'  
 When I open the 'Top Notch Recipes'  
 Then I should see two recipes  
+And I should see the average rating of each recipe
 
 ### Display Recipe Detail
 
 Given I have recipe 'Biscuits and Gravy'  
 When I view 'Biscuits and Gravy'  
 Then I should see ingredients for 'Biscuits and Gravy'  
+And I should see the average rating for the recipe
+
+## Api Definition
+
+The recipes should be retrieved using the api definition found [here](./api.json)
 
 ## Expectations
 
