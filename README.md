@@ -49,4 +49,4 @@ The recipes should be retrieved using the api definition found [here](./swagger.
   
 ## Warning
 
-* React-Native <= 55.x.x does not work with node 10.x.x.
+* React-Native <= 0.55.x does not work with node 10.x.x.
