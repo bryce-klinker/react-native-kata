@@ -1,0 +1,15 @@
+fastlane_version '2.119'
+
+platform :ios do 
+    lane :build do
+        increment_build_number(xcodeproj: './ios/sample.xcodeproj')
+        gym(scheme: 'sample', project: './ios/sample.xcodeproj')
+    end
+end
+
+platform :android do
+    lane :build do
+        gradle(task: 'clean', project_dir: 'android/')
+        gradle(task: 'assemble', build_type: 'Release', project_dir: 'android/')
+    end
+end
