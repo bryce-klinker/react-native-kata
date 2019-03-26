@@ -42,7 +42,7 @@ The recipes should be retrieved using the api definition found [here](./swagger.
   * Used to run react-native apps
 * [Create React Native App](https://github.com/react-community/create-react-native-app)
   * Used to create an initial react-native app.
-* [Detox](https://github.com/wix/detox)
+* [Xamarin UITests](https://docs.microsoft.com/en-us/appcenter/test-cloud/uitest/)
   * End-to-End testing tool
 * [Jest](https://facebook.github.io/jest/)
   * Unit testing framework
