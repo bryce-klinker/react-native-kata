@@ -1,6 +1,15 @@
 fastlane_version '2.119'
 
 platform :ios do 
+    lane :build_for_simulator do
+        xcbuild(
+            project: './ios/sample.xcodeproj',
+            scheme: 'sample',
+            configuration: 'Debug',
+            xcargs: '-sdk iphonesimulator -derivedDataPath build/sample'
+        )
+    end
+
     lane :build do
         increment_build_number(xcodeproj: './ios/sample.xcodeproj')
         gym(scheme: 'sample', project: './ios/sample.xcodeproj')
