@@ -6,11 +6,14 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "lint": "eslint .",
+    "test:watch": "yarn test --watch",
     "calabash:install": "cd ./ios && bundle exec calabash-ios download",
     "bundle:install": "bundle install --path ./.bundle && yarn calabash:install",
     "postinstall": "yarn bundle:install",
-    "build:ios": "bundle exec fastlane ios build_for_simulator",
-    "build:android": "bundle exec fastlane android build"
+    "build:ios": "bundle exec fastlane ios build_local",
+    "build:android": "bundle exec fastlane android build",
+    "run:ios": "yarn react-native run-ios",
+    "run:android": "yarn react-native run-android"
   },
   "dependencies": {
     "react": "16.8.3",

@@ -1,7 +1,7 @@
 fastlane_version '2.119'
 
-platform :ios do 
-    lane :build_for_simulator do
+platform :ios do
+    lane :build_local do 
         xcbuild(
             project: './ios/sample.xcodeproj',
             scheme: 'sample',
