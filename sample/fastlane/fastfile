@@ -2,17 +2,29 @@ fastlane_version '2.119'
 
 platform :ios do
     lane :build_local do 
-        xcbuild(
-            project: './ios/sample.xcodeproj',
-            scheme: 'sample',
+        gym(
+            project: './ios/sample.xcodeproj', 
+            scheme: 'sample', 
             configuration: 'Debug',
-            xcargs: '-sdk iphonesimulator -derivedDataPath build/sample'
+            sdk: 'iphonesimulator',
+            skip_package_ipa: true
         )
     end
 
     lane :build do
         increment_build_number(xcodeproj: './ios/sample.xcodeproj')
         gym(scheme: 'sample', project: './ios/sample.xcodeproj')
+    end
+
+    lane :calabash do 
+        gym(
+            project: './ios/sample.xcodeproj', 
+            scheme: 'sample', 
+            configuration: 'Release (Calabash)',
+            sdk: 'iphonesimulator',
+            clean: true,
+            skip_package_ipa: true # This would need to be set to false if submitting to AppCenter Test Cloud
+        )
     end
 end
 

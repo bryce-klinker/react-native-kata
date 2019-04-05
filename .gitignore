@@ -64,3 +64,12 @@ calabash.framework/
 # fastlane
 **/fastlane/*.xml
 **/fastlane/*.md
+
+# Xamarin
+.vs/
+packages/
+
+# .NET
+bin/
+obj/
+**/*.user

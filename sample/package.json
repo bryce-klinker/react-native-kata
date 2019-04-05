@@ -9,7 +9,8 @@
     "test:watch": "yarn test --watch",
     "calabash:install": "cd ./ios && bundle exec calabash-ios download",
     "bundle:install": "bundle install --path ./.bundle && yarn calabash:install",
-    "postinstall": "yarn bundle:install",
+    "schemes:install": "yarn react-native-schemes-manager all",
+    "postinstall": "yarn bundle:install && yarn schemes:install",
     "build:ios": "bundle exec fastlane ios build_local",
     "build:android": "bundle exec fastlane android build",
     "run:ios": "yarn react-native run-ios",
@@ -27,9 +28,16 @@
     "eslint": "5.15.3",
     "jest": "24.5.0",
     "metro-react-native-babel-preset": "0.53.1",
+    "react-native-schemes-manager": "1.0.5",
     "react-test-renderer": "16.8.3"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "xcodeSchemes": {
+    "Debug": [],
+    "Release": [
+      "Release (Calabash)"
+    ]
   }
 }
